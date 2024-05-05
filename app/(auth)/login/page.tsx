@@ -6,9 +6,11 @@ import style from "./style.module.css";
 import { IoEyeOffSharp } from "react-icons/io5";
 import { IoEyeSharp } from "react-icons/io5";
 import { BASE_URL } from "@/lib/constants";
-
+import { useSession, signIn } from "next-auth/react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { useRouter } from "next/navigation";
+import { Button } from "@nextui-org/react";
 type ValueTypes = {
 	email: string;
 	password: string;
@@ -28,6 +30,8 @@ const validationSchema = Yup.object().shape({
 });
 
 export default function Login() {
+	const { data: session } = useSession();
+	const router = useRouter();
 	const [showPassword, setShowPassword] = useState(false);
 	const [loading, setLoading] = useState(false);
 	const handleShowPassword = () => {
@@ -63,6 +67,7 @@ export default function Login() {
 			</div>
 		);
 	}
+	if(session) return router.push('/')
 
 	return (
 		<main className={`${style.container}`}>
@@ -122,6 +127,15 @@ export default function Login() {
 							component="section"
 							className={`${style.error}`}
 						/>
+					</div>
+					{/* auth with platform */}
+					<div className="flex w-full py-10 justify-between items-center">
+							<Button onPress={()=>signIn('google')}>
+								Login with Google
+							</Button>
+							<Button onPress={()=>signIn('github')}>
+								Login with Google
+							</Button>
 					</div>
 
 					{/* button submit */}

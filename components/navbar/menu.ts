@@ -1,37 +1,25 @@
 export const MenuList = [
     {
-        name: "Cart 🛒",
-        path: "/cart",
-        active: false,
-    },
-    {
         name: "Home",
         path: "/",
         active: false,
     },
     {
-        name: "About",
-        path: "/about",
+        name: "Myshop",
+        path: "/myshop",
         active: true,
     },
     {
-        name: "Services",
-        path: "/service",
+        name: "About",
+        path: "/about",
         active: false,
     },
+    
     {
-        name: "Contact",
-        path: "/contact",
+        name: "Policy",
+        path: "/policy",
         active: false,
     },
-    {
-        name: "Price",
-        path: "/price",
-        active: false,
-    },
-    {
-        name: "Enroll",
-        path: "/enroll",
-        active: false,
-    }
+
+    
 ]
