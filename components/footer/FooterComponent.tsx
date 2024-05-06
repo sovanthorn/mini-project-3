@@ -21,22 +21,22 @@ export function FooterComponent() {
             <div>
               <Footer.Title title="about" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Flowbite</Footer.Link>
-                <Footer.Link href="#">Tailwind CSS</Footer.Link>
+                <Footer.Link href="">Company</Footer.Link>
+                <Footer.Link href="">Contact</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
               <Footer.Title title="Follow us" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Github</Footer.Link>
-                <Footer.Link href="#">Discord</Footer.Link>
+                <Footer.Link href="https://www.facebook.com/noun.sovannthon/">Facebook</Footer.Link>
+                <Footer.Link href="/">Instagram</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
               <Footer.Title title="Legal" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Privacy Policy</Footer.Link>
-                <Footer.Link href="#">Terms &amp; Conditions</Footer.Link>
+                <Footer.Link href="/policy">Privacy Policy</Footer.Link>
+                <Footer.Link href="/policy">Terms &amp; Conditions</Footer.Link>
               </Footer.LinkGroup>
             </div>
           </div>
@@ -45,9 +45,9 @@ export function FooterComponent() {
         <div className="w-auto sm:flex sm:items-center sm:justify-between">
           <Footer.Copyright href="#" by="Flowbite™" year={2022} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Footer.Icon href="#" icon={BsFacebook} />
-            <Footer.Icon href="#" icon={BsInstagram} />
-            <Footer.Icon href="#" icon={BsGithub} />
+            <Footer.Icon href="https://www.facebook.com/noun.sovannthon/" icon={BsFacebook} />
+            <Footer.Icon href="/" icon={BsInstagram} />
+            <Footer.Icon href="/" icon={BsGithub} />
           </div>
         </div>
       </div>
