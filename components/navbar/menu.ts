@@ -6,7 +6,7 @@ export const MenuList = [
     },
     {
         name: "Myshop",
-        path: "/myshop",
+        path: "/login",
         active: true,
     },
     {

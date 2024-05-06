@@ -12,7 +12,7 @@ export async function POST(req: NextRequest){
         {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email:"nounsovannthon@gmail.com", password:"sovanthorn2802" }),
+            body: JSON.stringify({ email, password }),
         });   
         
 
